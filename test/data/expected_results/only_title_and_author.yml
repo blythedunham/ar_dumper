@@ -1,0 +1,36 @@
+--- 
+book_1: 
+  author_name: Terry Brooks
+  title: "The Voyage of Jerle Shannara: Antrax"
+
+book_2: 
+  author_name: Terry Brooks
+  title: "The Voyage of Jerle Shannara: Ilse Witch"
+
+book_3: 
+  author_name: Terry Brooks
+  title: "The Voyage of Jerle Shannara: Jarka Ruus"
+
+book_4: 
+  author_name: Terry Brooks
+  title: "The Voyage of Jerle Shannara: Morgwar"
+
+book_5: 
+  author_name: Douglas Niles
+  title: Circle At Center
+
+book_6: 
+  author_name: Charles R. Swindoll
+  title: WISDOM for the way
+
+book_7: 
+  author_name: John L. Neshem
+  title: High Tech Startup
+
+book_8: 
+  author_name: R.A. Salvatore
+  title: The Two Swords
+
+book_9: 
+  author_name: Max Lucado
+  title: Come Thirsty

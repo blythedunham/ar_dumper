@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+  <book>
+    <author-name>Terry Brooks</author-name>
+    <created-at type="datetime">2009-04-12T21:17:34-06:00</created-at>
+    <for-sale type="boolean">true</for-sale>
+    <id type="integer">1</id>
+    <publisher>Del Rey</publisher>
+    <title>The Voyage of Jerle Shannara: Antrax</title>
+    <topic-id type="integer" nil="true"></topic-id>
+    <updated-at type="datetime">2009-04-12T21:17:34-06:00</updated-at>
+  </book>
+  <book>
+    <author-name>Terry Brooks</author-name>
+    <created-at type="datetime">2009-04-12T21:17:34-06:00</created-at>
+    <for-sale type="boolean">false</for-sale>
+    <id type="integer">2</id>
+    <publisher>Del Rey</publisher>
+    <title>The Voyage of Jerle Shannara: Ilse Witch</title>
+    <topic-id type="integer" nil="true"></topic-id>
+    <updated-at type="datetime">2009-04-12T21:17:34-06:00</updated-at>
+  </book>
+  <book>
+    <author-name>Terry Brooks</author-name>
+    <created-at type="datetime">2009-04-12T21:17:34-06:00</created-at>
+    <for-sale type="boolean">true</for-sale>
+    <id type="integer">3</id>
+    <publisher>Del Rey</publisher>
+    <title>The Voyage of Jerle Shannara: Jarka Ruus</title>
+    <topic-id type="integer" nil="true"></topic-id>
+    <updated-at type="datetime">2009-04-12T21:17:34-06:00</updated-at>
+  </book>
+  <book>
+    <author-name>Terry Brooks</author-name>
+    <created-at type="datetime">2009-04-12T21:17:34-06:00</created-at>
+    <for-sale type="boolean">true</for-sale>
+    <id type="integer">4</id>
+    <publisher>Del Rey</publisher>
+    <title>The Voyage of Jerle Shannara: Morgwar</title>
+    <topic-id type="integer">4</topic-id>
+    <updated-at type="datetime">2009-04-12T21:17:34-06:00</updated-at>
+  </book>
+  <book>
+    <author-name>Douglas Niles</author-name>
+    <created-at type="datetime">2009-04-12T21:17:34-06:00</created-at>
+    <for-sale type="boolean">true</for-sale>
+    <id type="integer">5</id>
+    <publisher>ACE Fantasy</publisher>
+    <title>Circle At Center</title>
+    <topic-id type="integer" nil="true"></topic-id>
+    <updated-at type="datetime">2009-04-12T21:17:34-06:00</updated-at>
+  </book>
+  <book>
+    <author-name>Charles R. Swindoll</author-name>
+    <created-at type="datetime">2009-04-12T21:17:34-06:00</created-at>
+    <for-sale type="boolean">true</for-sale>
+    <id type="integer">6</id>
+    <publisher>Hallmark Books</publisher>
+    <title>WISDOM for the way</title>
+    <topic-id type="integer" nil="true"></topic-id>
+    <updated-at type="datetime">2009-04-12T21:17:34-06:00</updated-at>
+  </book>
+  <book>
+    <author-name>John L. Neshem</author-name>
+    <created-at type="datetime">2009-04-12T21:17:34-06:00</created-at>
+    <for-sale type="boolean">true</for-sale>
+    <id type="integer">7</id>
+    <publisher>Free Press</publisher>
+    <title>High Tech Startup</title>
+    <topic-id type="integer" nil="true"></topic-id>
+    <updated-at type="datetime">2009-04-12T21:17:34-06:00</updated-at>
+  </book>
+  <book>
+    <author-name>R.A. Salvatore</author-name>
+    <created-at type="datetime">2009-04-12T21:17:34-06:00</created-at>
+    <for-sale type="boolean">true</for-sale>
+    <id type="integer">8</id>
+    <publisher>Forgotten Realms</publisher>
+    <title>The Two Swords</title>
+    <topic-id type="integer" nil="true"></topic-id>
+    <updated-at type="datetime">2009-04-12T21:17:34-06:00</updated-at>
+  </book>
+  <book>
+    <author-name>Max Lucado</author-name>
+    <created-at type="datetime">2009-04-12T21:17:34-06:00</created-at>
+    <for-sale type="boolean">true</for-sale>
+    <id type="integer">9</id>
+    <publisher>W Publishing Group</publisher>
+    <title>Come Thirsty</title>
+    <topic-id type="integer" nil="true"></topic-id>
+    <updated-at type="datetime">2009-04-12T21:17:34-06:00</updated-at>
+  </book>
+</books>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+  <book>
+    <author-name>Terry Brooks</author-name>
+    <created-at type="datetime">2009-04-12T21:17:34-06:00</created-at>
+    <for-sale type="boolean">false</for-sale>
+    <id type="integer">2</id>
+    <publisher>Del Rey</publisher>
+    <title>The Voyage of Jerle Shannara: Ilse Witch</title>
+    <topic-id type="integer" nil="true"></topic-id>
+    <updated-at type="datetime">2009-04-12T21:17:34-06:00</updated-at>
+  </book>
+</books>

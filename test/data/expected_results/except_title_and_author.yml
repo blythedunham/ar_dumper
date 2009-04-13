@@ -1,0 +1,72 @@
+--- 
+book_1: 
+  topic_id: ""
+  updated_at: Sun Apr 12 21:17:34 -0600 2009
+  id: "1"
+  publisher: Del Rey
+  for_sale: "true"
+  created_at: Sun Apr 12 21:17:34 -0600 2009
+
+book_2: 
+  topic_id: ""
+  updated_at: Sun Apr 12 21:17:34 -0600 2009
+  id: "2"
+  publisher: Del Rey
+  for_sale: "false"
+  created_at: Sun Apr 12 21:17:34 -0600 2009
+
+book_3: 
+  topic_id: ""
+  updated_at: Sun Apr 12 21:17:34 -0600 2009
+  id: "3"
+  publisher: Del Rey
+  for_sale: "true"
+  created_at: Sun Apr 12 21:17:34 -0600 2009
+
+book_4: 
+  topic_id: "4"
+  updated_at: Sun Apr 12 21:17:34 -0600 2009
+  id: "4"
+  publisher: Del Rey
+  for_sale: "true"
+  created_at: Sun Apr 12 21:17:34 -0600 2009
+
+book_5: 
+  topic_id: ""
+  updated_at: Sun Apr 12 21:17:34 -0600 2009
+  id: "5"
+  publisher: ACE Fantasy
+  for_sale: "true"
+  created_at: Sun Apr 12 21:17:34 -0600 2009
+
+book_6: 
+  topic_id: ""
+  updated_at: Sun Apr 12 21:17:34 -0600 2009
+  id: "6"
+  publisher: Hallmark Books
+  for_sale: "true"
+  created_at: Sun Apr 12 21:17:34 -0600 2009
+
+book_7: 
+  topic_id: ""
+  updated_at: Sun Apr 12 21:17:34 -0600 2009
+  id: "7"
+  publisher: Free Press
+  for_sale: "true"
+  created_at: Sun Apr 12 21:17:34 -0600 2009
+
+book_8: 
+  topic_id: ""
+  updated_at: Sun Apr 12 21:17:34 -0600 2009
+  id: "8"
+  publisher: Forgotten Realms
+  for_sale: "true"
+  created_at: Sun Apr 12 21:17:34 -0600 2009
+
+book_9: 
+  topic_id: ""
+  updated_at: Sun Apr 12 21:17:34 -0600 2009
+  id: "9"
+  publisher: W Publishing Group
+  for_sale: "true"
+  created_at: Sun Apr 12 21:17:34 -0600 2009

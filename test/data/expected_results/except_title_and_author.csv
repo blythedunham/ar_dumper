@@ -1,0 +1,10 @@
+id,publisher,created_at,updated_at,topic_id,for_sale
+1,Del Rey,Sun Apr 12 21:17:34 -0600 2009,Sun Apr 12 21:17:34 -0600 2009,,true
+2,Del Rey,Sun Apr 12 21:17:34 -0600 2009,Sun Apr 12 21:17:34 -0600 2009,,false
+3,Del Rey,Sun Apr 12 21:17:34 -0600 2009,Sun Apr 12 21:17:34 -0600 2009,,true
+4,Del Rey,Sun Apr 12 21:17:34 -0600 2009,Sun Apr 12 21:17:34 -0600 2009,4,true
+5,ACE Fantasy,Sun Apr 12 21:17:34 -0600 2009,Sun Apr 12 21:17:34 -0600 2009,,true
+6,Hallmark Books,Sun Apr 12 21:17:34 -0600 2009,Sun Apr 12 21:17:34 -0600 2009,,true
+7,Free Press,Sun Apr 12 21:17:34 -0600 2009,Sun Apr 12 21:17:34 -0600 2009,,true
+8,Forgotten Realms,Sun Apr 12 21:17:34 -0600 2009,Sun Apr 12 21:17:34 -0600 2009,,true
+9,W Publishing Group,Sun Apr 12 21:17:34 -0600 2009,Sun Apr 12 21:17:34 -0600 2009,,true

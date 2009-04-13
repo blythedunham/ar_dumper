@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+  <book>
+    <created-at type="datetime">2009-04-12T21:17:34-06:00</created-at>
+    <for-sale type="boolean">true</for-sale>
+    <id type="integer">1</id>
+    <publisher>Del Rey</publisher>
+    <topic-id type="integer" nil="true"></topic-id>
+    <updated-at type="datetime">2009-04-12T21:17:34-06:00</updated-at>
+  </book>
+  <book>
+    <created-at type="datetime">2009-04-12T21:17:34-06:00</created-at>
+    <for-sale type="boolean">false</for-sale>
+    <id type="integer">2</id>
+    <publisher>Del Rey</publisher>
+    <topic-id type="integer" nil="true"></topic-id>
+    <updated-at type="datetime">2009-04-12T21:17:34-06:00</updated-at>
+  </book>
+  <book>
+    <created-at type="datetime">2009-04-12T21:17:34-06:00</created-at>
+    <for-sale type="boolean">true</for-sale>
+    <id type="integer">3</id>
+    <publisher>Del Rey</publisher>
+    <topic-id type="integer" nil="true"></topic-id>
+    <updated-at type="datetime">2009-04-12T21:17:34-06:00</updated-at>
+  </book>
+  <book>
+    <created-at type="datetime">2009-04-12T21:17:34-06:00</created-at>
+    <for-sale type="boolean">true</for-sale>
+    <id type="integer">4</id>
+    <publisher>Del Rey</publisher>
+    <topic-id type="integer">4</topic-id>
+    <updated-at type="datetime">2009-04-12T21:17:34-06:00</updated-at>
+  </book>
+  <book>
+    <created-at type="datetime">2009-04-12T21:17:34-06:00</created-at>
+    <for-sale type="boolean">true</for-sale>
+    <id type="integer">5</id>
+    <publisher>ACE Fantasy</publisher>
+    <topic-id type="integer" nil="true"></topic-id>
+    <updated-at type="datetime">2009-04-12T21:17:34-06:00</updated-at>
+  </book>
+  <book>
+    <created-at type="datetime">2009-04-12T21:17:34-06:00</created-at>
+    <for-sale type="boolean">true</for-sale>
+    <id type="integer">6</id>
+    <publisher>Hallmark Books</publisher>
+    <topic-id type="integer" nil="true"></topic-id>
+    <updated-at type="datetime">2009-04-12T21:17:34-06:00</updated-at>
+  </book>
+  <book>
+    <created-at type="datetime">2009-04-12T21:17:34-06:00</created-at>
+    <for-sale type="boolean">true</for-sale>
+    <id type="integer">7</id>
+    <publisher>Free Press</publisher>
+    <topic-id type="integer" nil="true"></topic-id>
+    <updated-at type="datetime">2009-04-12T21:17:34-06:00</updated-at>
+  </book>
+  <book>
+    <created-at type="datetime">2009-04-12T21:17:34-06:00</created-at>
+    <for-sale type="boolean">true</for-sale>
+    <id type="integer">8</id>
+    <publisher>Forgotten Realms</publisher>
+    <topic-id type="integer" nil="true"></topic-id>
+    <updated-at type="datetime">2009-04-12T21:17:34-06:00</updated-at>
+  </book>
+  <book>
+    <created-at type="datetime">2009-04-12T21:17:34-06:00</created-at>
+    <for-sale type="boolean">true</for-sale>
+    <id type="integer">9</id>
+    <publisher>W Publishing Group</publisher>
+    <topic-id type="integer" nil="true"></topic-id>
+    <updated-at type="datetime">2009-04-12T21:17:34-06:00</updated-at>
+  </book>
+</books>

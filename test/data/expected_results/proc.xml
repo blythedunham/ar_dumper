@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+  <book>
+    <author-name>Terry Brooks</author-name>
+    <topic-content>NO CONTENT</topic-content>
+  </book>
+  <book>
+    <author-name>Terry Brooks</author-name>
+    <topic-content>Giraffes rock</topic-content>
+  </book>
+</books>
