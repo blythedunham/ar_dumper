@@ -44,6 +44,7 @@
 #
 # == Finder Methods
 # * <tt>:find</tt> a map of the finder options passed to find. For example, <tt> {:conditions => ['hairy = ?', 'of course'], :include => :rodents}</tt>
+# * <tt>:records</tt> - the records to be dumped instead of using a find
 #
 # == Format Header
 # * <tt>:header</tt> when a hash is specified, maps the field name to the header name. For example <tt>{:a => 'COL A', :b => 'COL B'}</tt> would print 'COL A', 'COL B'
@@ -445,11 +446,15 @@ class ArDumper
   # Options are:
   # * <tt>:find</tt> - a map of the finder options passed to find. For example, + {:conditions => ['hairy = ?', 'of course'], :include => :rodents} +
   # * <tt>:page_size</tt> - the page size to use. Defaults to dumper_page_size or 50. Set to false to disable pagination
+  # * <tt>:records</tt> - the records to be dumped instead of using a find
   def self.paginate_dump_records(klass, options={}, &block)#:nodoc:
     finder_options = (options[:find]||{}).clone
     
+    if options[:records]
+      yield options[:records], 0
+      return
     #pagination is not needed when :page_size => false
-    if options[:page_size].is_a?(FalseClass)
+    elsif options[:page_size].is_a?(FalseClass)
       yield klass.find(:all, finder_options), 0
       return
     end

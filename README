@@ -62,6 +62,7 @@ Homepage
 
  == Finder Methods
  * :find a map of the finder options passed to find. For example,  {:conditions => ['hairy = ?', 'of course'], :include => :rodents}
+ * <tt>:records</tt> - the records to be dumped instead of using a find
 
  == Format Header
  * :header when a hash is specified, maps the field name to the header name. For example {:a => 'COL A', :b => 'COL B'} would print 'COL A', 'COL B'

@@ -1,0 +1,79 @@
+#############################################################################
+
+ Formats ActiveRecord data in chunks and dumps it to a file, temporary file, or string. Specify the page_size used to paginate
+ records and flush files.
+
+ ==Specify Output
+ * <tt>:filename</tt> the name of the file to create. By default will create a file based on the timestamp.
+ * <tt>:file_extension</tt> appends file extension unless one exists in file name
+ * <tt>:only</tt> a list of the attributes to be included. By default, all column_names are used.
+ * <tt>:except</tt> a list of the attributes to be excluded. By default, all column_names are used. This option is not available if +:only+ is used
+ * <tt>:methods</tt> a list of the methods to be called on the object
+ * <tt>:procs</tt> hash of header name to Proc object
+
+ === Attributes (Only and Exclude)
+ Specify which attributes to include and exclude
+   Book.dumper :yml, :only => [:author_name, :title]
+
+   Book.dump :csv, :except => [:topic_id]
+
+ === Methods
+ Use <tt>:methods</tt> to include methods on the record that are not column attributes
+   BigOle.dumper :csv, :methods => [:age, :favorite_food]
+   Output..
+   ..other attributes.., 25, doughnuts
+
+ === Proc
+ To call procs on the object(s) use <tt>:procs</tt> with a hash of name to value
+ The dumper options hash are provided to the proc, and contains the current record <tt>options[:record]</tt> is provided
+
+ ==== Proc Options Hash
+ <tt>:record</tt> - the active record
+ <tt>:result_set</tt> - the current result set
+ <tt>:counter</tt> - the number of the record
+ <tt>:page_num</tt> - the page number
+ <tt>:target</tt> - the file/string target
+
+  topic_content_proc = Proc.new{|options|  options[:record].topic ? options[:record].topic.content : 'NO CONTENT' }
+  Book.dumper :procs => {:topic_content => topic_content_proc}})
+
+   <book>
+     # ... other attributes and methods ...
+     <topic-content>NO CONTENT</my_rating>
+   </book>
+
+ == Finder Methods
+ * <tt>:find</tt> a map of the finder options passed to find. For example, <tt> {:conditions => ['hairy = ?', 'of course'], :include => :rodents}</tt>
+ * <tt>:records</tt> - the records to be dumped instead of using a find
+
+ == Format Header
+ * <tt>:header</tt> when a hash is specified, maps the field name to the header name. For example <tt>{:a => 'COL A', :b => 'COL B'}</tt> would print 'COL A', 'COL B'
+   when an array is specified uses this instead of the fields
+   when true or by default prints the fields
+   when false does not include a header
+ * <tt>:text_format</tt> a string method such as <tt>:titleize</tt>, <tt>:dasherize</tt>, <tt>:underscore</tt> to format the on all the headers. If an attribute is <tt>:email_address</tt> and <tt>:titleize</tt> is chosen, then the Header value is "Email Address"
+ * <tt>:root</tt> In xml, this is the name of the highest level list object. The plural of the class name is the default. For yml, this is the base name of the
+   the objects. Each record will be root_id. For example, contact_2348
+
+ == Filename and Target
+ <tt>:target_type</tt> The target_type for the data. Defaults to <tt>:file</tt>.
+ * <tt>:string</tt> prints to string. Do not use with large data sets
+ * <tt>:tmp_file</tt>. Use a temporary file that is destroyed when the process exists
+ * <tt>:file</tt>. Use a standard file
+ <tt>:filename</tt> basename of the file. Defaults to random time based string for non-temporary files
+ <tt>:file_extension</tt> Extension (suffix) like .csv, .xml. Added only if the basename has no suffix.
+ <tt>:file_extension</tt> is only available when <tt>:target_type_type => :file</tt>
+ <tt>:file_path</tt> path or directory of the file. Defaults to dumper_file_path or temporary directories
+
+ == Format specific options
+ * <tt>:csv</tt> - any options to pass to csv parser. Example <tt> :csv => { :col_sep => "\t" }</tt>
+ * <tt>:xml</tt> - any options to pass to xml parser. Example <tt> :xml => { :indent => 4 }    </tt>
+
+ === Installation
+  script/plugin install git://github.com/blythedunham/ar_dumper.git
+ === Developers
+  Blythe Dunham http://snowgiraffe.com
+
+ === Homepage
+ * Project Site: http://github.com/blythedunham/ar_dumper/tree/master
+ * Rdoc: http://snowgiraffe.com/rdocs/ar_dumper
