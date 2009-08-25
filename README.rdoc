@@ -1,5 +1,4 @@
-#############################################################################
-
+= ActiveRecord Dumper
  Formats ActiveRecord data in chunks and dumps it to a file, temporary file, or string. Specify the page_size used to paginate
  records and flush files.
 
