@@ -25,7 +25,7 @@ include_file_globs = ["README*",
                        
 spec = Gem::Specification.new do |s|
     s.name = "ar_dumper"
-    s.version = "1.2.0.0"
+    s.version = "1.2.0.1"
     s.author = "Blythe Dunham"
     s.email = "blythe@snowgiraffe.com"
     s.homepage = "http://github.com/blythedunham/ar_dumper"
