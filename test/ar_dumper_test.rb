@@ -15,16 +15,18 @@ class ArDumperTest< TestCaseSuperClass
       dump_options_str.gsub!(/^\{,/, '{')
     end
 
-    %w(xml yml csv).each do |export_type|
-
+    %w(xml yml csv fixture).each do |export_type|
+      extension = export_type == 'fixture' ? 'yml' : export_type
       new_method = %{
         def test_dumper_should_#{options[:name]||options[:expected_result]}_#{export_type}
           file_name = Book.dumper :#{export_type}, #{dump_options_str}
-           result_file = assert_result_files(file_name, :expected_results => '#{options[:expected_result]}.#{export_type}',
-                          :file_name_match => /ardumper\\.book\\.\\d+\\.\\d+\\.#{export_type}/).first
+           result_file = assert_result_files(file_name, 
+                          :format => :#{export_type},
+                          :expected_results => '#{options[:expected_result]}.#{extension}',
+                          :file_name_match => /ardumper\\.book\\.\\d+\\.\\d+\\.#{extension}/).first
         end
       }
-      #puts new_method
+  
       class_eval new_method, __FILE__, __LINE__
     end
   end
@@ -89,10 +91,12 @@ class ArDumperTest< TestCaseSuperClass
       #remove timezone stamp
       expected_output = File.read(expected_results_file(options[:expected_results])).gsub( /-06(:?)00/, "-0" )
       actual_output = File.read(result_files.first).gsub(/-0\d(:?)00/, '-0')
-      
-      assert_equal(expected_output, actual_output)
+
+      #fixture files are like yml but minus the --- (hash) at the top
+      expected_output.gsub!(/^---\s\n/, "\n") if options[:format] == :fixture
+      assert_equal(expected_output,actual_output)
     end
-    
+
     result_files
   end
 

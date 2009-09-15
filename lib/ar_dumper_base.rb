@@ -143,9 +143,12 @@ class ArDumper
         
       when :xml
         dump_to_xml
-        
-      when :yaml, :fixture, :yml
-        dump_to_fixture
+
+      when :yaml, :yml
+        dump_to_fixture( false )
+
+      when :fixture
+        dump_to_fixture( true )
         
       else
         raise ArDumperException.new("Unknown format #{format}. Please specify :csv, :xml, or :yml ")
@@ -276,20 +279,20 @@ class ArDumper
   # dumps the data to a fixture file
   # In addition to options listed in +dumper+:
   # <tt>:root</tt> Basename of the record. Defaults to the class name so each record is named customer_1
-  def dump_to_fixture#:nodoc:
+  def dump_to_fixture(is_fixture = false)#:nodoc:
     basename = @options[:root]||@klass.table_name.singularize
     header_list = build_header_list
 
     # doctor the yaml a bit to print the hash header at the top
     # instead of each record
-    dumper(:yml, "---\s") do |record|
+    dumper(:yml, is_fixture ? nil : "---\s") do |record|
       record_data = Hash.new
       dump_record(record).each_with_index{|field, idx| record_data[header_list[idx].to_s] = field.to_s }
       options[:target] << {"#{basename}_#{record.id}" => record_data}.to_yaml.gsub(/^---\s\n/, "\n")
     end
   end
   
-  
+
   
   #############################################################################
   # CSV DUMPER
