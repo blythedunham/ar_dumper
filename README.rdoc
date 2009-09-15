@@ -68,7 +68,13 @@ when false does not include a header
 * <tt>:xml</tt> - any options to pass to xml parser. Example <tt> :xml => { :indent => 4 }    </tt>
 
 === Installation
- script/plugin install git://github.com/blythedunham/ar_dumper.git
+Plugin
+  script/plugin install git://github.com/blythedunham/ar_dumper.git
+
+Gem
+  gem sources -a http://gems.github.com
+  sudo gem install blythedunham-ar_dumper
+
 === Developers
 Blythe Dunham http://snowgiraffe.com
 
