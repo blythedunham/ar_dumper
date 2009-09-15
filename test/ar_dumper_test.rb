@@ -86,8 +86,11 @@ class ArDumperTest< TestCaseSuperClass
     assert_equal(options[:file_count]||1, result_files.length)
 
     if options[:expected_results]
-      assert_equal(File.read(expected_results_file(options[:expected_results])),
-                   File.read(result_files.first))
+      #remove timezone stamp
+      expected_output = File.read(expected_results_file(options[:expected_results])).gsub( /-06(:?)00/, "-0" )
+      actual_output = File.read(result_files.first).gsub(/-0\d(:?)00/, '-0')
+      
+      assert_equal(expected_output, actual_output)
     end
     
     result_files
